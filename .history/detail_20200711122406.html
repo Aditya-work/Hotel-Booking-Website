@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+</head>
+<style>
+    .footer a img{
+        width: 20px;
+        height: 22px;
+    }
+</style>
+<body>
+   <!-- Wrap Div -->
+    <div class="main">
+        <!-- Header -->     
+        <div class="header">
+            <a href="./index.html"><img src="./assests/images/logo.png" alt="logo" width="200" height="200"/></a>
+            <a href="./login.html" rel="redirect to login page">Login</a>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" 
+                alt="Radisson Blu Hotel"/>
+                <br>
+                <!-- Add Form to Page -->
+                <form action="./payment.html" method="GET">
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="number" id="adults" min="1" required/><br/>
+
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required/><br/>
+
+                    <label for="from_date">From Date:</label>
+                    <input type="date" name="from_date" id="from_date" required/><br/>
+
+                    <label for="to_date">To Date:</label>
+                    <input type="date" name="to_date" id="to_date" required/><br/>
+
+                    <label for="total">Total:</label>
+                    <input type="number" name="number" id="total" readonly/><br/>
+
+                    <input type="submit" value="Book Now">
+                </form>
+                <h3>Radisson Blu Hotel</h3>
+                <p>RATING</p>
+                <p>5 Star</p>
+                <p>AMENTIES</p>
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5>DESCRIPTION</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quaerat fugit omnis nam libero doloribus odio voluptate numquam quia culpa, provident nulla dolore quisquam veniam non maiores iusto vero ducimus!</p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div><a href="./contact.html" target="_self">Contact Us</a></div>
+            <a href="https://www.facebook.com/"  target="_blank"><img src="./assests/images/facebook.png" alt="Fackbook"/></a>
+            <a href="https://www.instagram.com/"  target="_blank"><img src="./assests/images/instagram.png" alt="Instagram"/></a>
+            <a href="https://www.twitter.com/"  target="_blank"><img src="./assests/images/twitter.png" alt="Twitter"/></a>
+            <div><span>&copy;2020 ROOM SEARCH PVT. LTD</span></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
+.hotels img{
+    width: 250px;
+    height: 250px;
+}
+
+.card-detail{
+    background-color;
+    padding: 4%;
+}

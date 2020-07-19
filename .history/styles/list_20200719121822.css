@@ -1,0 +1,45 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+.hotel-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.hotel-description{
+    background-color:rgb(132,136,139);
+    margin: 2% 4%;
+    width: 40%;
+    height: auto;
+}
+
+.hotel-container img{
+    width: 250px;
+    height: 250px;
+}
+
+/*                   Content                  */
+
+.content .views ul{
+    list-style: none;
+    text-align: center;
+    margin:0 auto;
+}
+.content .views ul li {
+    display: inline-block;
+    padding: 20px;
+}
+.content .views ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+
+
+
+

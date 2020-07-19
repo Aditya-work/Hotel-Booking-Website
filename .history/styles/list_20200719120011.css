@@ -1,0 +1,28 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
+.hotels img{
+    width: 250px;
+    height: 250px;
+}
+
+.hotel-description{
+    background-color:rgb(132,136,139);
+    margin: 2%;
+    width: 40%;
+    height: auto;
+}
+
+/*                   Content                  */
+
+.content .views ul{
+    list-style: none;
+}
+.content .views ul li a{
+    text-decoration: none;
+    color
+}
+
+

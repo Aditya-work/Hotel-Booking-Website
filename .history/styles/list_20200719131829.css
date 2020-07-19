@@ -25,7 +25,7 @@
 }
 
 .hotel-container img{
-    width: 250px;
+    width: 230px;
     height: 200px;
 }
 .content .views{
@@ -40,19 +40,13 @@
     padding: 0;
 }
 .content .views ul li {
-    display: inline;
-    /* padding: 0px 20px; */
+    display: inline-block;
+    padding: 10px 20px;
 }
 .content .views ul li a{
     text-decoration: none;
     color:#000;
     font-weight: bold;
-   
-}
-
-.content .views ul li:first-child a{
-    margin-left: -30px;
-    padding-right: 35px;
 }
 
 .map{

@@ -14,7 +14,7 @@
 
 .hotel-description{
     background-color:rgb(132,136,139);
-    margin: 2% 4%;
+    margin: 2% 3.5%;
     width: 40%;
     height: auto;
 }
@@ -51,7 +51,7 @@
 }
 
 .content .views ul li:first-child a{
-    margin-left: -30px;
+    margin-left: -60px;
     padding-right: 35px;
 }
 

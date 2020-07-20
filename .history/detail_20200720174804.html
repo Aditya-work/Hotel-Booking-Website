@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Wrap Div -->
+    <div class="main">
+        <!-- Header -->     
+        <header>
+            <a href="./index.html">
+                <img src="./assests/images/logo.png" alt="logo"/>
+            </a>
+            <a class="login" href="./login.html">Login</a>
+        </header>
+        <!-- Content -->
+        <div class="content">
+            <div class="top-box">
+                <div class="image-container">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" 
+                    alt="Radisson Blu Hotel"/>
+                </div>
+                
+                <!-- Added Form to Page -->
+                <div class="form-container">
+                    <form action="./payment.html" method="GET">
+                        <div class="input-group">
+                            <label for="adults">Adults:</label>
+                            <input type="number" name="adult" id="adults" min="1" required/>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required/>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="from_date">From Date:</label>
+                            <input type="date" name="fromDate" id="from_date" required/>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="to_date">To Date:</label>
+                            <input type="date" name="toDate" id="to_date" required/>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="total">Total:</label>
+                            <input type="number" name="price" id="total" readonly/>
+                        </div>
+                        
+                        <div class="book-now">
+                            <input type="submit" value="Book Now">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>    
+                <div class="hotel-details">    
+                    <h3>Radisson Blu Hotel</h3>
+                    <p class="">RATING</p>
+                    <p>5 Star</p>
+                    <p class="">AMENTIES</p>
+                    <ul>
+                        <li>Room Service</li>
+                        <li>Restaurant</li>
+                        <li>Fitness Center</li>
+                        <li>Pool</li>
+                    </ul>
+                    <h5 class="">DESCRIPTION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quaerat fugit omnis nam libero doloribus odio voluptate numquam quia culpa, provident nulla dolore quisquam veniam non maiores iusto vero ducimus!</p>
+                </div>    
+            
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="contact-us">
+                <a href="./contact.html" target="_self">Contact Us</a>
+            </div>
+            <div class="copyright"><span>&copy;2020 ROOM SEARCH PVT. LTD</span></div>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/"  target="_blank">
+                    <img src="./assests/images/facebook.png" alt="Fackbook"/>
+                </a>
+                <a href="https://www.instagram.com/"  target="_blank">
+                    <img src="./assests/images/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="https://www.twitter.com/"  target="_blank">
+                    <img src="./assests/images/twitter.png" alt="Twitter"/>
+                </a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

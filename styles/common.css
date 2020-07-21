@@ -22,6 +22,10 @@ header,footer{
     font-weight: bold;
 }
 
+.checked {
+    color: orange;
+  }
+
 /******************* Header ******************/
 
 header{

@@ -1,3 +1,6 @@
+/* *{
+    box-sizing: border-box;
+} */
 
 body{
     width: 100%;
@@ -48,6 +51,10 @@ header .login{
     margin-right: 2%;
 }
 
+.line-height-1{
+    line-height: 1;
+}
+
 .content{
     padding-top: 60px;
 }
@@ -96,5 +103,7 @@ footer a img{
     text-align: center;
 }
 
-
+.col-sm-2{
+    max-width: 9.666667%;
+}
 

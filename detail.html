@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/detail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
    <!-- Wrap Div -->
@@ -16,46 +18,48 @@
             <a href="./index.html">
                 <img src="./assests/images/logo.png" alt="logo"/>
             </a>
-            <a class="login" href="./login.html">Login</a>
+            <!-- Button trigger modal -->
+            <a class="login btn btn-light btn-sm text-uppercase" 
+            data-toggle="modal" data-target="#login" href="./login.html">Login</a>
         </header>
         <!-- Content -->
         <div class="content">
             <div class="top-box">
-                <div class="image-container">
+                <div class="image-container col-sm-7">
                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" 
                     alt="Radisson Blu Hotel"/>
                 </div>
                 
                 <!-- Added Form to Page -->
-                <div class="form-container">
+                <div class="hotel-form-container col-sm-4">
                     <form action="./payment.html" method="GET">
-                        <div class="input-group">
+                        <div class="hotel-input_group">
                             <label for="adults">Adults:</label>
                             <input type="number" name="adult" id="adults" min="1" required/>
                         </div>
 
-                        <div class="input-group">
+                        <div class="hotel-input_group">
                             <label for="name">Name:</label>
                             <input type="text" name="name" id="name" required/>
                         </div>
 
-                        <div class="input-group">
+                        <div class="hotel-input_group">
                             <label for="from_date">From Date:</label>
                             <input type="date" name="fromDate" id="from_date" required/>
                         </div>
 
-                        <div class="input-group">
+                        <div class="hotel-input_group">
                             <label for="to_date">To Date:</label>
                             <input type="date" name="toDate" id="to_date" required/>
                         </div>
 
-                        <div class="input-group">
+                        <div class="hotel-input_group">
                             <label for="total">Total:</label>
                             <input type="number" name="price" id="total" readonly/>
                         </div>
                         
                         <div class="book-now">
-                            <input type="submit" value="Book Now">
+                            <input class="btn btn-success bg-transparent text-success b-hover" type="submit" value="Book Now">
                         </div>
                         
                     </form>
@@ -81,7 +85,9 @@
         <!-- Footer -->
         <footer>
             <div class="contact-us">
-                <a href="./contact.html" target="_self">Contact Us</a>
+                <!-- Button trigger modal -->
+                <a class="btn btn-info btn-sm text-white" data-toggle="modal" 
+                data-target="#contact-us" target="_self" href="./contact.html" >Contact Us</a>
             </div>
             <div class="copyright"><span>&copy;2020 ROOM SEARCH PVT. LTD</span></div>
             <div class="social-media-icons">
@@ -97,6 +103,72 @@
             </div>
         </footer>
 
+    <!-- Modal Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body pt-4 pb-2">
+                <!-- Modal body form Added -->
+                <form>
+                    <div class="form-group row text-center mx-auto">
+                        <label for="exampleInputName" class="col-sm-4 col-form-label line-height-1">Username:</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control form-control-sm p-1" id="exampleInputName" autocomplete="off" placeholder="Enter Username">
+                        </div>
+                    </div>
+                    <div class="form-group row text-center mx-auto">
+                        <label for="exampleInputPassword" class="col-sm-4 col-form-label line-height-1">Password:</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control form-control-sm p-1" id="exampleInputPassword" autocomplete="off" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center pb-0">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
     </div>
+    
+    <!-- Modal 2 Contact Us -->
+    <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body pt-4 pb-2">
+                <p class="mb-0 mt-0">Thank you for reaching out!!!</p>
+                <p class="mt-0">Please enter your email and we will get back to you.</p>
+                <!-- Modal body form Added -->
+                <form>
+                    <div class="form-group row mx-auto">
+                        <label for="exampleInputEmail" class="col-sm-2 col-form-label line-height-1 pl-0 pr-0">Email:</label>
+                        <div class="col-sm-6 pl-0 pr-0">
+                            <input type="email" class="form-control form-control-sm p-1" id="exampleInputEmail" autocomplete="off" placeholder="Enter your email id">
+                        </div>
+                    </div>
+                    <div class="modal-footer pb-0">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 }
 
 .image-container{
-    width: 58%;
+    /* width: 58%; */
     text-align: center;
     margin: 1% auto;
 }
@@ -18,39 +18,47 @@
     max-height: 350px;
 }
 
-.form-container{
-    width: 30%;
+.hotel-form-container{
+    /* width: 30%; */
     border-left: 1px solid;
 }
 
-.form-container form{
+.hotel-form-container form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 4%;
+    padding: 7% 2%;
+    max-height: 400px;
 }
 
-.form-container form .input-group{
+body .hotel-form-container form .hotel-input_group{
     display: flex;
     justify-content: space-between;
-    padding: 6% 3%;
+    padding:3%;
 }
-.form-container form .input-group input{
+
+body .hotel-form-container form .hotel-input_group input{
     width: 60%;
 }
 
-.form-container form .input-group input[type="date"]{
-    width: 61%;
-}
+/* body .hotel-form-container form .hotel-input_group input[type="date"]{
+    width: 60%;
+} */
 
 .book-now{
     text-align: center;
 }
 
 .book-now input{
-    padding: 2%;
+    margin-top: 5%;
 }
 
 .hotel-details{
     margin: 2%;
+}
+
+.b-hover:hover {
+    color: #fff !important;
+    background-color:#28a745!important;
+    border-color: #28a745!important;
 }

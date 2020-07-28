@@ -1,4 +1,7 @@
 
+#mydiv{
+    display: none;
+}
 
 
 /*      Content     */
@@ -118,7 +121,6 @@
         margin: 0px auto;
     }
 }
-
 
 
 

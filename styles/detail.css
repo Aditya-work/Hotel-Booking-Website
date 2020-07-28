@@ -19,15 +19,15 @@
     background-image: none;
 }
 .carousel-control-prev{
-    left: -8%;
+    left: -2%;
     top: -30%;
 }
 .carousel-control-next{
-    right: -7%;
+    right: 0%;
     top: -30%;
 }
 .content img{
-    width: 500px;
+    width: 790px;
     max-height: 350px;
     height: 350px;
 }
@@ -77,8 +77,37 @@ body .hotel-form-container form .hotel-input_group input{
     border-color: #28a745!important;
 }
 
+/* .col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 100%;
+} */
+
+/* @media (min-width: 768px){
+    .col-md-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 100%;
+    }
+    .carousel-control-next {
+        right: 0%;
+        top: -30%;
+    }
+    .carousel-control-prev {
+        left: -2%;
+        top: -30%;
+    }
+} */
 
 
+@media (min-width: 768px){
+    .col-md-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 67.333333%;
+        /* padding:0; */
+    }
+}
 
 @media (min-width: 320px)  and (max-width: 424px){
     .top-box {

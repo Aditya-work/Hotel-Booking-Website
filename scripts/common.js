@@ -4,12 +4,23 @@ loginTemplate();
 footerTemplate();
 
 
+$(document).ready(function() {
+    //Preloader
+    preloaderFadeOutTime = 1000;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+});
+
 function navHeaderTemplate() {
     let headertemplate = '<a href="./index.html">'+
                         '<img src="./assests/images/logo.png" alt="logo"/>'+
                         '</a>'+
                         '<!-- Button trigger modal -->'+
-                        '<a class="login btn btn-light btn-sm text-uppercase" data-toggle="modal" data-target="#login-modal" href="./login.html">Login</a>';
+                        '<a class="login btn btn-light btn-sm text-uppercase" id="login" data-toggle="modal" data-target="#login-modal" href="./login.html">Login</a>'+
+                        '<a class="login btn btn-light btn-sm text-uppercase" id="logout">LOGOUT</a>';
     document.getElementById('navheader').innerHTML += headertemplate;
 }
 
@@ -29,13 +40,13 @@ function loginTemplate() {
                 '<div class="form-group row text-center mx-auto">'+
                     '<label for="exampleInputName" class="col-sm-4 col-form-label line-height-1">Username:</label>'+
                     '<div class="col-sm-6">'+
-                        '<input type="email" class="form-control form-control-sm p-1" id="exampleInputName" autocomplete="off" placeholder="Enter Username">'+
+                        '<input type="text" class="form-control form-control-sm p-1" id="username" autocomplete="off" placeholder="Enter Username">'+
                     '</div>'+
                 '</div>'+
                 '<div class="form-group row text-center mx-auto">'+
                     '<label for="exampleInputPassword" class="col-sm-4 col-form-label line-height-1">Password:</label>'+
                     '<div class="col-sm-6">'+
-                        '<input type="password" class="form-control form-control-sm p-1" id="exampleInputPassword" autocomplete="off" placeholder="Enter Password">'+
+                        '<input type="password" class="form-control form-control-sm p-1" id="password" autocomplete="off" placeholder="Enter Password">'+
                     '</div>'+
                 '</div>'+
                 '<div class="modal-footer justify-content-center pb-0">'+

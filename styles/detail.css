@@ -111,16 +111,28 @@ body .hotel-form-container form .hotel-input_group input{
         padding: 0% 2% 2% 0;
     }
 }
+
+
 @media (min-width: 425px)  and (max-width: 575px){
     .top-box {
         flex-direction: column;
-        min-height: 750px;
+        min-height: 800px;
+    }
+    .col-sm-7,.col-sm-5{
+        padding: 0;
+    }
+    .carousel-control-next {
+        right: 4%;
+    }
+    .carousel-control-prev {
+        left: 0%;
+        top: -30%;
     }
     .content img {
         min-width: 305px;
         width: 100%;
         padding: 5px;
-        min-height: 350px;
+        min-height: 400px;
         padding: 5px;
     }
     .hotel-form-container {
@@ -131,8 +143,12 @@ body .hotel-form-container form .hotel-input_group input{
     .hotel-form-container form {
         padding: 0% 2% 2% 0;
     }
- 
 }
+
+
+
+
+
 @media (min-width: 576px) and (max-width: 767px) {
     .carousel-control-next {
         right: 4%;

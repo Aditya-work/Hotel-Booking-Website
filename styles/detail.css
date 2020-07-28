@@ -117,7 +117,8 @@ body .hotel-form-container form .hotel-input_group input{
 @media (min-width: 425px)  and (max-width: 575px){
     .top-box {
         flex-direction: column;
-        min-height: 800px;
+        min-height: 900px;
+        padding: 20px 0px;
     }
     .col-sm-7,.col-sm-5{
         padding: 0;
@@ -139,7 +140,7 @@ body .hotel-form-container form .hotel-input_group input{
     .hotel-form-container {
         border-top: 1px solid;
         border-left: none;
-        min-height: 400px;
+        min-height: 600px;
         padding: 10px 0px;
     }
     .hotel-form-container form {

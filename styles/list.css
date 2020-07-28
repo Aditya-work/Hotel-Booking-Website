@@ -68,5 +68,56 @@
     font-weight: bold;
 }
 
+.map img{
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .hotel-container{
+        padding: 0 15px;
+    }
+    .hotel-description {
+        width: 100%;
+        margin: 3% auto;
+    }
+    .map img{
+        width: 80%;
+    }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+    .hotel-description {
+        width: 100%;
+        margin: 3% auto;
+    }
+    .hotel-card{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hotel-container img{
+        width: 100%;
+    }
+    .hotel-description{
+        height: 350px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .hotel-container{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
